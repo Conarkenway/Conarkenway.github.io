@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  background: black;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Full screen letters */
+body::before {
+  content:
+  "Q W E R T Y U I O P A S D F G H J K L Z X C V B N M \
+M X Z A Q W E R T Y U I O P L K J H G F D S A Z X C \
+P O I U Y T R E W Q M N B V C X Z L K J H G F D S A \
+H G F D S A Q W E R T Y U I O P Z X C V B N M L K J \
+M X Z A Q W E R T Y U I O P L K J H U I  D S A Z X  \
+P O I U Y T R E W Q M N B V C X Z L K J H G F D S A \
+H G F D S A Q W E R T Y U I O P Z X C V B N M L K J \
+T Y U I O P A S R Q  W E R T Y U L Z X C V B Z E N  \
+M X Z A Q W E R T Y U I O P L K J H G F D S A Z X C \
+P O I U Y T R E W Q M N B V C X Z L K J H G F D S A \
+H G F D S A Q W E R T Y U I O P Z X C V B N M L K J \
+T Y U I O P T Y U I O P A S D F G H J K L Z X C N M \
+M X Z A Q W E R T Y U I O P L K J H G F D S A Z X C \
+P O I U Y T R E W Q M N B V C X Z L K J H G F D S A \
+H G F D S A Q W E R T Y U I O P Z X C V B N M L K J \
+T YW E R T Y U I O P A S D F G H J K L Z X C V B N  \
+M X Z A Q W E R T Y U I O P L K J H G F D S A Z X C \
+P O I U Y T R E W Q M N B V C X Z L K J H G F D S A \
+H G F D S A Q W E R T Y U I O P Z X C V B N M L K J \
+T Y U  R T Y U I O P A S D F G H J K L Z X C V B N M \
+M X Z A Q W E R T Y U I O P L K J H G F D S A Z X C \
+P O I U Y T R E W Q M N B V C X Z L K J H G F D S A \
+H G F D S A Q W E R T Y U I O P Z X C V B N M L K J \
+T Y U I O P A S D F G H J K L Z X C V B N M Q W E R";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  font-size: 15px;
+  line-height: 2.5;
+  letter-spacing: 14px;
+
+  color: rgb(255, 255, 255);
+
+  white-space: pre-wrap;
+  word-break: break-word;
+
+  z-index: 0;
+}
+
+/* Keep card on top */
+.card {
+  position: relative;
+  z-index: 1;
+}
+/* Make sure card stays above */
+.card {
+  position: relative;
+  z-index: 1;
+
+  background: #a7a8aa; /* off-white */
+  color: #000000; /* dark text */
+
+  padding: 30px;
+  border-radius: 15px;
+  width: 280px;
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+}
+
+/* Profile Image */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 40%;
+  margin-bottom: 15px;
+  border: 3px solid #f3f3f3;
+}
+
+/* Links */
+.links a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background: #0f172a;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #1a9bac;
+  color: black;
+}
