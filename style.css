@@ -87,13 +87,13 @@ T Y U I O P A S D F G H J K L Z X C V B N M Q W E R";
 
 /* Profile Image */
 .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-bottom: 15px;
-    border: 3px solid white;
     object-fit: cover;
     display: block;
+    margin: 0 auto;
+    border: 3px solid white;
 }
 
 /* Links */
